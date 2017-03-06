@@ -4,7 +4,7 @@ using System.Collections;
 public class LaneSpawner : MonoBehaviour {
 
     public GameObject[] lanePrefabs;
-    public int maxOffset = 500;
+    public int maxOffset = 50000;
 
     // Use this for initialization
     void Start () {
@@ -12,7 +12,7 @@ public class LaneSpawner : MonoBehaviour {
         while (offset < maxOffset)
         {
             CreateRandomLane(offset);
-            offset += 10;
+            offset += 1000;
         }
     }
 	
