@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour {
 
     public void QuitGame()
     {
-        SceneManager.LoadScene(QuitIndex);
+        Application.Quit();
     }
 
     public void MenuScene()
